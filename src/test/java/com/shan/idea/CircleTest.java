@@ -7,7 +7,14 @@ class CircleTest {
 
     @Test
     void getCornerCount() {
-        Circle circle = new Circle();
+        Shape circle = new Shape() {
+            public int getCornerCount() {
+                System.out.println("fffdfdfdfd");
+                int count1 = 17;
+                int count = count1;
+                return count;
+            }
+        };
         Assertions.assertEquals(0, circle.getCornerCount());
     }
 

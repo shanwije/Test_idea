@@ -8,6 +8,7 @@ class SquareTest {
     void hasFourCorners() {
         Shape square = new Square();
         getAssertValue(square);
+
     }
 
     private void getAssertValue(Shape square) {
@@ -15,8 +16,7 @@ class SquareTest {
     }
 
     private int getCornerCount(Shape square) {
-        int cornerCount = square.getCornerCount();
-        return cornerCount;
+        return square.getCornerCount();
     }
 
 
